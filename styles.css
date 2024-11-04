@@ -1,0 +1,180 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #4c8bf5;
+    color: white;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logout-btn {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #ff6b6b;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+/* Main Content */
+main {
+    width: 100%;
+    max-width: 600px;
+    padding: 1rem;
+}
+
+.message {
+    text-align: center;
+    color: #ff6b6b;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Form Wrapper */
+.form-wrapper {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.form-container {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 270px;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.form-container h2 {
+    color: #4c8bf5;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    background-color: #4c8bf5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #3b6fd1;
+}
+
+/* Welcome Section */
+.welcome-section {
+    background-color: #f0f8ff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.welcome-section h2 {
+    color: #4c8bf5;
+}
+
+.motivation-section,
+.resources-section,
+.self-care-form-section {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.motivation-section h3,
+.resources-section h3,
+.self-care-form-section h3 {
+    color: #4c8bf5;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 1.2rem;
+}
+
+ul li {
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+/* Formulario de autocuidado */
+.self-care-form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    resize: vertical;
+}
+
+textarea,
+input[type="number"],
+input[type="text"] {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+    .form-wrapper {
+        flex-direction: column;
+    }
+
+    .form-container {
+        max-width: 100%;
+    }
+}
